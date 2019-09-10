@@ -1,5 +1,9 @@
 [
 	{
+	    "caption": "Convert Case: Better Title Case",
+	    "command": "convert_to_better_title"
+	},
+	{
 	    "caption": "Convert Case: PascalCase",
 	    "command": "convert_to_pascal"
 	},

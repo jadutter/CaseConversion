@@ -16,6 +16,11 @@ else:
 SETTINGS_FILE = "CaseConversion.sublime-settings"
 
 
+def to_better_title(text, detectAcronyms, acronyms):
+    words, case, sep = case_parse.parseVariable(text, detectAcronyms, acronyms)
+    return ' '.join(words)
+
+
 def to_snake_case(text, detectAcronyms, acronyms):
     words, case, sep = case_parse.parseVariable(text, detectAcronyms, acronyms)
     return '_'.join([w.lower() for w in words])
@@ -92,6 +97,11 @@ def run_on_selections(view, edit, func):
         new_text = leading + func(text.strip(), detectAcronyms, acronyms) + trailing
         if new_text != text:
             view.replace(edit, region, new_text)
+
+
+class ConvertToBetterTitleCommand(sublime_plugin.TextCommand):
+    def run(self, edit):
+        run_on_selections(self.view, edit, to_better_title)
 
 
 class ToggleSnakeCamelPascalCommand(sublime_plugin.TextCommand):
