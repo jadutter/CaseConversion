@@ -3,6 +3,7 @@ Case Conversion is a plugin for Sublime Text. It converts the current word/token
 camel, snake, screaming snake, dot, dash (hyphen), forward slash `/`, backslash `\` cases, and separated words.
 
 ## Keybindings
+- To Better Title Case:  "ctrl+alt+c", "ctrl+alt+t"
 - To snake_case:  "ctrl+alt+c", "ctrl+alt+s"
 - To SCREAMING_SNAKE_CASE:  "ctrl+alt+c", "ctrl+alt+shift+s"
 - To camelCase: "ctrl+alt+c", "ctrl+alt+c"
@@ -29,6 +30,7 @@ Clone this repository in to the Sublime Text "Packages" directory, which is loca
 - Curtis Gibby
 - Matt Morrison
 - Gavin Higham
+- Josh Dutterer
 
 ## License
 Copyright (C) 2012-2015 Davis Clark

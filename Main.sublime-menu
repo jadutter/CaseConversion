@@ -7,6 +7,7 @@
 	        "id": "convert_case",
 	        "children":
 	        [
+                { "command": "convert_to_better_title", "caption": "Better Title Case" },
 	            { "command": "convert_to_snake", "caption": "snake_case" },
 	            { "command": "convert_to_screaming_snake", "caption": "SCREAMING_SNAKE_CASE" },
 	            { "command": "convert_to_camel", "caption": "camelCase" },
